@@ -53,11 +53,11 @@ Because I have installed Firebase already, all you have to do is Sign Up / Login
 13. Go to your Intercom Workspace.
 14. Go to `Settings/Installation/Android/` under the header Enable push notifications you have to paste your Firebase Server Key.
 
-Congratulations, Firebase is now set up for you.
+🎉 **Congratulations, Firebase is now set up for you.** 🎉
 
 Next we need to change some settings in the App itself to link it to your own Intercom Workspace
 
-### Link App to your Workspace
+### Link App to your Intercom Workspace
 
 1. You need to open (double click the file name) the **strings.xml** file: `app/src/main/res/values/strings.xml` 
 2. Under the Comment `<!-- Intercom Workspace Setup !Change values with your own! -->` you can find 4 different strings.
@@ -68,7 +68,7 @@ Next we need to change some settings in the App itself to link it to your own In
 6. Replace the Carousel ID with yours.
 7. Lastly my app uses a test user with the Email address of `john.doe@example.com`. You can either keep that and use it for your demo, or replace the email address with whichever one you want to use for your own demo.
 
-## Testing and demo set up
+## Setup for Demo
 
 Now all that is left is testing and setting everything up for a demo.
 - At the very top of the screen in Android Studio you should find a dropdown menu saying "No Devices". It is to the left of a green play button and to the right of a dropdown with a little Android Icon saying app.
