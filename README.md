@@ -27,7 +27,7 @@ Here is the [Official Setup Guide](https://developers.intercom.com/installing-in
 
 Because I have installed Firebase already, all you have to do is Sign Up / Login to Firebase, create a project, export and replace the json file within the Android App and you are ready to go.
 
-#### Follow These Steps to set up Firebase:
+#### Set up a Firebase project:
 
 1. Go to [Firebase](https://firebase.google.com/) and Login with your Intercom Google Account.
 2. Select "[Go to Console](https://console.firebase.google.com/)" at the top of the page.
@@ -37,10 +37,21 @@ Because I have installed Firebase already, all you have to do is Sign Up / Login
     1. You have to use the following Android package name `com.example.philippintercomdemo`, if you do not want to refactor the application.
     2. The App Nickname is only used within Firebase, you can use whatever name will help you know which application you are using this for. I was not very creative and called mine `Intercom Demo Philipp` for example.
     3. Ignore the Debugging SHA-1 certificate and click next.
+
+#### Download google-services.json and replace the existing one.
+
 6. You will now be able to download **your** `google-services.json` file which you will need to replace mine.
 7. Follow the instructions on screen and open Android Studio, switch from App to Project view. 
 8. Open finder/file explorer and drag & drop the json file on top of the one you aready see in Android Studio. 
 9. Select to replace the existing one.
+
+#### Link Firebase with Intercom.
+
+10. Go back to Firebase and open the project settings through the little cog icon.
+11. Switch to the Cloud Messaging tab.
+12. Copy the Server Key
+13. Go to your Intercom Workspace.
+14. Go to `Settings/Installation/Android/` under the header Enable push notifications you have to paste your Firebase Server Key.
 
 Congratulations, Firebase is now set up for you.
 
@@ -49,7 +60,7 @@ Next we need to change some settings in the App itself to link it to your own In
 ### Link App to your Workspace
 
 1. You need to open (double click the file name) the **strings.xml** file: `app/src/main/res/values/strings.xml` 
-2. Under the Comment (`<!-- Intercom Workspace Setup !Change values with your own! -->`) you can find 4 different strings.
+2. Under the Comment `<!-- Intercom Workspace Setup !Change values with your own! -->` you can find 4 different strings.
 3. Go to your [Intercom Workspace](https://app.intercom.com/) and find the API Key and App ID under `Settings/Installation/Android`.
 4. Replace the API Key and App ID respectively.
 5. If you have already created a Mobile Carousel, fantastic, Otherwise go to Outbound and create a Mobile Carousel.
