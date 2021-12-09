@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "616909896384",
+    "project_id": "intercom-demo-philipp",
+    "storage_bucket": "intercom-demo-philipp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616909896384:android:e8173a2b857b33b07c0b25",
+        "android_client_info": {
+          "package_name": "com.example.philippintercomdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616909896384-8hea0h59farouh8vkf2nqm5thj1bqeu4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHBJNwBgNiZIkr6nEQe2qGUd6fGe6lfzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616909896384-8hea0h59farouh8vkf2nqm5thj1bqeu4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
