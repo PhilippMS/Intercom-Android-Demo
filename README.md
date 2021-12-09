@@ -49,7 +49,7 @@ Next we need to change some settings in the App itself to link it to your own In
 ### Link App to your Workspace
 
 1. You need to open (double click the file name) the **strings.xml** file: `app/src/main/res/values/strings.xml` 
-2. Under the Comment (<!-- Intercom Workspace Setup !Change values with your own! -->) you can find 4 different strings.
+2. Under the Comment (`<!-- Intercom Workspace Setup !Change values with your own! -->`) you can find 4 different strings.
 3. Go to your [Intercom Workspace](https://app.intercom.com/) and find the API Key and App ID under `Settings/Installation/Android`.
 4. Replace the API Key and App ID respectively.
 5. If you have already created a Mobile Carousel, fantastic, Otherwise go to Outbound and create a Mobile Carousel.
