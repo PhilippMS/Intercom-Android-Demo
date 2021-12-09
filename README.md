@@ -41,8 +41,8 @@ Because I have installed Firebase already, all you have to do is Sign Up / Login
 #### Download google-services.json and replace the existing one.
 
 6. You will now be able to download **your** `google-services.json` file which you will need to replace mine.
-7. Follow the instructions on screen and open Android Studio, switch from App to Project view. 
-8. Open finder/file explorer and drag & drop the json file on top of the one you aready see in Android Studio. 
+7. Follow the instructions on screen and open Android Studio, switch from App to Project view.
+8. Open finder/file explorer and drag & drop the json file on top of the one you aready see in Android Studio.
 9. Select to replace the existing one.
 
 #### Link Firebase with Intercom.
@@ -59,30 +59,28 @@ Next we need to change some settings in the App itself to link it to your own In
 
 ### Link App to your Intercom Workspace
 
-1. You need to open (double click the file name) the **strings.xml** file: `app/src/main/res/values/strings.xml` 
+1. You need to open (double click the file name) the **strings.xml** file: `app/src/main/res/values/strings.xml`
 2. Under the Comment `<!-- Intercom Workspace Setup !Change values with your own! -->` you can find 4 different strings.
 3. Go to your [Intercom Workspace](https://app.intercom.com/) and find the API Key and App ID under `Settings/Installation/Android`.
 4. Replace the API Key and App ID respectively.
 5. If you have already created a Mobile Carousel, fantastic, Otherwise go to Outbound and create a Mobile Carousel.
     - After creating your Carousel you can find the Carousel ID at the "Trigger your carousel from code" section.
 6. Replace the Carousel ID with yours.
-7. Lastly my app uses a test user with the Email address of `john.doe@example.com`. You can either keep that and use it for your demo, or replace the email address with whichever one you want to use for your own demo.
+7. *(Optional) Lastly my app uses a test user with the Email address of `john.doe@example.com`. You can either keep that and use it for your demo, or replace the email address with whichever one you want to use for your own demo.*
 
-## Setup for Demo
+## Set up Emulator
 
 Now all that is left is testing and setting everything up for a demo.
-- At the very top of the screen in Android Studio you should find a dropdown menu saying "No Devices". It is to the left of a green play button and to the right of a dropdown with a little Android Icon saying app.
-- Select the No Devices dropdown and click on AVD Manager to Create a Virtual Device. 
-- Now you can select any of the preconfigured phones. I would recommend something a bit newer, like Pixel 4 or 5. 
-- Download one of the recommended releases, again I would recommend one of the newer ones, and hit next and finish the setup.
-- Close the Android Virtual Device Manager.
-- The dropdown should now display the device that you have created.
-- Press the green play icon to run the app in the emulator. *(This will take a while the first time you start the device, so give it time)*
- 
-- Some setting changes I recommend for the Emulator:
-    - Press the three buttons next to the phone to open the Extended Controls. 
-    - go to Settings in the Extended Controls window.
-    - Select "Show window frame around device" (*This can help if you have a multi monitor setup and you have problems moving the emulator between screens*)
-    - Another helpful setting for demos is "Emulator always on top" which does what it says on the tin.
+1. At the very top of the screen in Android Studio you should find a dropdown menu saying "No Devices". It is to the left of a green play button and to the right of a dropdown with a little Android Icon saying app.
+2. Select the "No Devices" dropdown and click on AVD Manager to Create a Virtual Device.
+3. Now you can select any of the preconfigured phones. I would recommend something a bit newer, like Pixel 4 or 5.
+4. Download one of the recommended releases, again I would recommend one of the newer ones, and hit next and finish the setup.
+5. Close the Android Virtual Device Manager.
+6. The dropdown should now display the device that you have created.
+7. Press the green play icon to run the app in the emulator. *(This will take a while the first time you start the device, so give it time)*
 
-
+### Recommended emulator settings:
+1. Press the three buttons next to the phone to open the Extended Controls.
+2. go to Settings in the Extended Controls window.
+- Select "Show window frame around device" *(This can help if you have a multi monitor setup and you have problems moving the emulator between screens)*
+- Another helpful setting for demos is "Emulator always on top" which does what it says on the tin.
