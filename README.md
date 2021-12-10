@@ -36,14 +36,14 @@ Because I have installed Firebase already, all you have to do is Sign Up / Login
 5. You are now on the configuration page:
     1. You have to use the following Android package name `com.example.philippintercomdemo`, if you do not want to refactor the application.
     2. The App Nickname is only used within Firebase, you can use whatever name will help you know which application you are using this for. I was not very creative and called mine `Intercom Demo Philipp` for example.
-    3. Ignore the Debugging SHA-1 certificate and click next.
+    3. Ignore the Debugging SHA-1 certificate and click Register App.
 
 #### Download google-services.json and replace the existing one.
 
 6. You will now be able to download **your** `google-services.json` file which you will need to replace mine.
 7. Follow the instructions on screen and open Android Studio, switch from App to Project view.
-8. Open finder/file explorer and drag & drop the json file on top of the one you aready see in Android Studio.
-9. Select to replace the existing one.
+8. Open finder/file explorer and drag & drop the json file on top of the app folder in Android Studio `Intercom-Android-Demo/app`.
+9. Select to replace the existing json file.
 
 #### Link Firebase with Intercom.
 
