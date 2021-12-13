@@ -2,7 +2,7 @@
     <string name="app_name">Intercom Demo</string>
     <string name="textViewTitle">Intercom Demo</string>
     <string name="textViewSubtitle">by Philipp Speidel</string>
-    <string name="intercom_logo">Intercom Logo</string>
+    <string name="logo">Logo</string>
     <string name="button_messenger">Open Messenger</string>
     <string name="button_carousel">Open Carousel</string>
     <string name="switch_launcher">Show Launcher</string>
