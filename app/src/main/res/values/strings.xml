@@ -9,8 +9,8 @@
 
 
     <!--  Intercom Workspace Setup !Change values with your own!  -->
-    <string name="intercom_api_key">android_sdk-1787e209ad9d32926a848931acee6b345e75e898</string>
-    <string name="intercom_app_id">b57s98eg</string>
-    <string name="intercom_carousel_id">22681156</string>
+    <string name="intercom_api_key">android_sdk-1787e209ad9d32926a848931acee6b345e75e899</string>
+    <string name="intercom_app_id">b57s98eh</string>
+    <string name="intercom_carousel_id">22681157</string>
     <string name="intercom_user_email">john.doe@example.com</string>
 </resources>
