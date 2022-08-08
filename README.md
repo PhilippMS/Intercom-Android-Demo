@@ -11,7 +11,7 @@ The Demo currently has the following capabilities:
 1. Download and install [Android Studio](https://developer.android.com/studio?gclid=CjwKCAiA78aNBhAlEiwA7B76p97HhkXEnGh8mDJkFR2lDxHQfSnS_Oj_kZznH3-jW31mv7gYRRnK1hoCseMQAvD_BwE&gclsrc=aw.ds).
 2. Start Android Studio and select "Get from VCS" under Projects. Keep Version control set to Git and stay on the Repository URL, you do not need to set up GitHub in Android Studio.
 3. Copy and Paste the GitHub Project URL `https://github.com/PhilippMS/Intercom-Android-Demo/` into the URL field.
-4. *(Optional) You may want to change Directory. The default might be a different location to the default directory of your locally creatated projects.*
+4. *(Optional) You may want to change Directory. The default might be a different location to the default directory of your locally created projects.*
 5. Select Clone.
 
 ## Configuration Instructions:
