@@ -5,12 +5,17 @@
     <string name="logo">Logo</string>
     <string name="button_messenger">Open Messenger</string>
     <string name="button_carousel">Open Carousel</string>
+    <string name="button_event">Trigger Event</string>
+    <string name="button_survey">Open Survey</string>
     <string name="switch_launcher">Show Launcher</string>
-
 
     <!--  Intercom Workspace Setup !Change values with your own!  -->
     <string name="intercom_api_key">android_sdk-1787e209ad9d32926a848931acee6b345e75e899</string>
     <string name="intercom_app_id">b57s98eh</string>
+
     <string name="intercom_carousel_id">22681157</string>
+    <string name="intercom_survey_id">27241132</string>
+
     <string name="intercom_user_email">john.doe@example.com</string>
+    <string name="intercom_user_id">1234567</string>
 </resources>
