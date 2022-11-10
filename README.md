@@ -3,6 +3,7 @@
 The Demo currently has the following capabilities:
 - Switch to hide and display the **Launcher**
 - Button to display the **Messenger**
+- **Unread Conversation Counter** (Next the the "Open Messenger" Button)
 - Button to display a **Carousel**
 - Button to display a **Survey**
 - Button to trigger **Event** which can be used as trigger for Push Notifications
