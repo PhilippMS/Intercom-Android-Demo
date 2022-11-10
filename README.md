@@ -4,6 +4,8 @@ The Demo currently has the following capabilities:
 - Switch to hide and display the **Launcher**
 - Button to display the **Messenger**
 - Button to display a **Carousel**
+- Button to display a **Survey**
+- Button to trigger **Event** which can be used as trigger for Push Notifications
 - Connection through Google Firebase for **Push Notifications**
 
 ## Installation Instructions:
@@ -22,62 +24,31 @@ Lets start with...
 
 ### Firebase:
 
-Here is the [Official Setup Guide](https://developers.intercom.com/installing-intercom/docs/android-fcm-push-notifications) from Intercom for FCM based Push Notifications.
-(*You can use it to understand the setup better.*)
-
-Because I have installed Firebase already, all you have to do is Sign Up / Login to Firebase, create a project, export and replace the json file within the Android App and you are ready to go.
-
-#### Set up a Firebase project:
-
-1. Go to [Firebase](https://firebase.google.com/) and Login with your Intercom Google Account.
-2. Select "[Go to Console](https://console.firebase.google.com/)" at the top of the page.
-3. From here you should be able to set up a new project. It does not matter what you call the project, mine is called `Intercom Demo Philipp`.
-4. After you set up the new project you will automatically be redirected to the project page. You are greeted with a message telling you to add firebase to your App. Select Android.
-5. You are now on the configuration page:
-    1. You have to use the following Android package name `com.example.philippintercomdemo`, if you do not want to refactor the application.
-    2. The App Nickname is only used within Firebase, you can use whatever name will help you know which application you are using this for. I was not very creative and called mine `Intercom Demo Philipp` for example.
-    3. Ignore the Debugging SHA-1 certificate and click Register App.
-
-#### Download google-services.json and replace the existing one.
-
-6. You will now be able to download **your** `google-services.json` file which you will need to replace mine.
-7. Follow the instructions on screen and open Android Studio, switch from App to Project view.
-8. Open finder/file explorer and drag & drop the json file on top of the app folder in Android Studio `Intercom-Android-Demo/app`.
-9. Select to replace the existing json file.
-
-#### Link Firebase with Intercom.
-
-10. Go back to Firebase and open the project settings through the little cog icon.
-11. Switch to the Cloud Messaging tab.
-12. Copy the Server Key
-13. Go to your Intercom Workspace.
-14. Go to `Settings/Installation/Android/` under the header Enable push notifications you have to paste your Firebase Server Key.
-
-🎉 **Congratulations, Firebase is now set up for you.** 🎉
-
-Next we need to change some settings in the App itself to link it to your own Intercom Workspace
+https://developers.intercom.com/installing-intercom/docs/push-notifications-android
 
 ### Link App to your Intercom Workspace
 
 1. You need to open (double click the file name) the **strings.xml** file: `app/src/main/res/values/strings.xml`
-2. Under the Comment `<!-- Intercom Workspace Setup !Change values with your own! -->` you can find 4 different strings.
+2. Under the Comment `<!-- Intercom Workspace Setup !Change values with your own! -->` you can find different strings.
 3. Go to your [Intercom Workspace](https://app.intercom.com/) and find the API Key and App ID under `Settings/Installation/Android`.
 4. Replace the API Key and App ID respectively.
 5. If you have already created a Mobile Carousel, fantastic, Otherwise go to Outbound and create a Mobile Carousel.
     - After creating your Carousel you can find the Carousel ID at the "Trigger your carousel from code" section.
 6. Replace the Carousel ID with yours.
-7. *(Optional) Lastly my app uses a test user with the Email address of `john.doe@example.com`. You can either keep that and use it for your demo, or replace the email address with whichever one you want to use for your own demo.*
+7. Repeat Steps 5 & 6 for surveys
+8. *(Optional) Lastly my app uses a test user with the Email address of `john.doe@example.com`. You can either keep that and use it for your demo, or replace the email address with whichever one you want to use for your own demo. You can see that I have both Email & User ID set up here, the MainActivity.kt file has a set up to either use Email or User ID. You can set in here what you want to use default now is User ID (1234567)*
 
 ## Set up Emulator
 
 Now all that is left is testing and setting everything up for a demo.
 1. At the very top of the screen in Android Studio you should find a dropdown menu saying "No Devices". It is to the left of a green play button and to the right of a dropdown with a little Android Icon saying app.
 2. Select the "No Devices" dropdown and click on AVD Manager to Create a Virtual Device.
-3. Now you can select any of the preconfigured phones. I would recommend something a bit newer, like Pixel 4 or 5.
-4. Download one of the recommended releases, again I would recommend one of the newer ones, and hit next and finish the setup.
+3. Now you can select any of the preconfigured phones. I would recommend something a bit newer.
+4. Download one of the recommended releases, again I would recommend one of the newer ones (Like API 33, and hit next and finish the setup.
 5. Close the Android Virtual Device Manager.
 6. The dropdown should now display the device that you have created.
 7. Press the green play icon to run the app in the emulator. *(This will take a while the first time you start the device, so give it time)*
+8. After the Emulator is running and the app is installed you will have to manually allow Notifications for it. Find the app in the App Drawer and Longpress on it, select "App Info" and activate Notifications. Otherwise Push will not work!
 
 ### Recommended emulator settings:
 1. Press the three buttons next to the phone to open the Extended Controls.
